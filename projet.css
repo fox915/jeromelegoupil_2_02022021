@@ -5,9 +5,16 @@ body{
     padding: 0;
     margin-left: 3%;
     margin-right: 3%;
+    font-size: 1,5rem;
 }
     
+.Ccontainerheader,
+nav ul{
 
+    margin-top: 20px;
+
+
+}
 
 
 
@@ -26,38 +33,68 @@ nav ul{
     top: 0px;
     right: 20px;
     color: blue;
-
-}
-
-
-
-
-
-
-em{
-    color: white;
-    border: solid blue;
-    border-radius: 0px 20px 20px 0px;
-    background-color: blue;
     
 
+}
+
+.containerbtn{
+
+    display: flex;
+    margin-right: 5px;
+
+}
+
+.btn--first,
+.btn--second{
+    padding: 6px;
+    font-size: 15px;
+
+
+}
+.search{
+
+    display: inline;
+}
+
+
+
+
+.btn--first{
+    border-radius:10px 0px 0px 10px;
+    background-color: #f2f2f2;
+    font-size: 15px;
+    width: 20px;
+    border: 1px solid #f2f2f2;
 
 
 }
 
-.map{
-
-    border: 1px solid grey;
-    border-radius: 30px;
-    display:table;
-    background-color:grey;
+.text--input{
+    padding: 8px;
+    border :1px solid #f2f2f2;
+    width: 210px;
+    font-size: 15px;
 
 
 }
 
+.btn--second{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065fc;
+    color:white;
+    cursor:pointer;
+    width: 100px;
+    border: 1px solid #0065fc;
+
+
+}
+    
+
+    
+    
+    
 
          
-    
     
 
 
@@ -72,6 +109,7 @@ em{
     width: 900px;
     margin-top: 30px;
     height: 40px;
+    
 }   
 
 .list-group i{
@@ -79,6 +117,7 @@ em{
     padding: 10px;
     background-color: #deebff;
     border-radius: 50%;
+    color:#0065fc;
     
     
     
@@ -87,17 +126,14 @@ em{
 
     .list-item{
         width: 200px;
-        color: black;
-        
         text-decoration: none;
         font-style: normal;
-        
         border: 2px solid grey;
+        border-radius: 20px 20px 20px 20px;
+
+}
 
 
-
-
-    }
         
 
     #information {
@@ -119,7 +155,7 @@ align-items: center;
         font-size: 12px;
     }   
 
-
+    /*hebergement et populaire block*/
     .containerhebergementetpopulaire{
 
         display: flex;
@@ -184,10 +220,258 @@ align-items: center;
     line-height: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
+    
+}
+ 
+    
+
+
+ 
+
+ .cost--location--hebergement{
+
+    margin-top: 23px;
+ }
+
+
+ .p--afficherplus{
+
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: 9OO;
+    margin-bottom: 40px;
+    font-size: 1.15rem;
+ }
+
+ .containerpopulaire{
+
+        width: 350px;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+
+
+ }
+/*les plus populaires*/
+
+ .containerpopulaire h1{
+
+    margin-left: 30px;
+    margin-right: 21px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .figure--populaire{
+
+    margin-top: 20px;
+    margin-left: 30px;
+    margin: 0;
+    padding: 6px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 1px 5px 2px rgb(209,209,209);
+
+ }
+
+ .link--populaire{
+
+    margin: 10px;
+    border-radius: 10px;
+
+ }
+
+ .figure--populaire img{
+
+
+    width: 130px;
+    height: 150px;
+    border-radius: 10px 0px 0px 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    
+ }
+
+ .figure--populaire i {
+     margin-top: 30px;
+
+}
+
+.figure--position--populaire{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+    
+.figcaption--populaire{
+
+    margin-left: 24px;
+    width: 160px;
+}
+
+.name--location--populaire {
+    
+    margin-top: 10px;
+
+}
+
+.cost--location--populaire{
+
+    margin-top: -10px;
+}
+
+figcaption i{
+
+    color:#0065fc;
+text-decoration:underline white;
+
+}
+
+.name--location--hebergement,
+.name--location--populaire{
+    font-weight:bold;
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: underline white;
+
+    }
+    
+.cost--location--hebergement,
+.cost--location--populaire {
+
+color: black;
+text-decoration: underline white;
+
+}
+
+/*Activités a marseille */
+
+.containeractivites{
+
+
+    margin-top: 30px;
 }
 
 
+.figure--position--activites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.figure--activites{
+        background-color: white;
+        border-radius: 20px;
+        border: 1px solid #f2f2f2;
+        margin-top: 13px;
+        margin: 0;
+        
+
+}
+
+
+.link--activites{
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.figure--activites img{
+    width: 310px;
+    height: 410px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+
+.figcaption--activites{
+
+    align-items: center;
+    margin-left: 30px;
+    font-weight: bold;
+
+}
+
+.figure--double{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.figure--activites--double--larger{
+        background-color: white;
+        border-radius: 20px;
+        border:1px solid #f2f2f2;
+        margin: 0;
+        float: left;
+
+}
+
+.figure--activites--double--larger img{
+
+    width: 320px;
+    height:180px;
+}
+
+.figure--activites--double--smaller{
+
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #f2f2f2;
+    margin: 0;
+}
+
+.figure--activites--double--smaller img{
+
+    width: 320px;
+    height: 120px;
+}
+
+.figure--activites--double--normal{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #f2f2f2;
+    margin: 0;
+}   
+
+
+.figure--activites--double--normal img{
+
+    width: 320px;
+    height:120px;
+
+}
+
+
+.figure--activites--double--normal img,
+.figure--activites--double--larger img,
+.figure--activites--double--smaller{
     
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
 

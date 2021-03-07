@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="projet.css" />
+    <link rel="stylesheet" media='screen and (min-width: 940px) and (max-width: 1415px)' href="css/bigtablet.css" />
+    <link rel="stylesheet" media='screen and (min-width: 600px) and (max-width: 940px)' href="css/smalltablet.css" />
+    <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 600px)' href="css/phone.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link href="https://fr.allfont.net/allfont.css?fonts=raleway-regular" rel="stylesheet" type="text/css" />
 
@@ -12,16 +16,17 @@
       <title>Reservia</title>
    </HEAD>
    <BODY>
+       <!--entête logo + navigation-->
        <header>
-        <div class="header">
-        <div class="header_navbar">
-    <div class="navbbar_logo"><img src="image/logo/Reservia.svg" alt="projet">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-    </div>
-        
-    <nav>
-    <ul>
+        <div class="containerheader">
+        <div class="mouvement--header">
+           <img src="image/logo/Reservia.svg" alt="projet">
+           
+           
+           <nav>
+           
+           <ul>
+
         <li>hébergement</li>
         <li>Activités</li> 
         <li>Sinscrire</li>
@@ -32,22 +37,41 @@
 
 </header>
     
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
 <nav>
     
-    <div class="map">
-    <i class="fas fa-map-marker-alt"></i>
-    <input type="text" id="search" name="placeholder" placeholder="Marseille,France"><em>Rechercher</em>
+
     
+    <div class="containerbtn">
+        <div class="btn--first"><i class="fas fa-map-marker-alt"></i></div>
+    <input type="search" class="text--input" name="placeholder" placeholder="Marseille,France">
+    <div class="btn--second"><span class="search">Rechercher</span>
+    </div>
+    
+</div>
+    </div>
     </div> 
+</div>
+    
+    
+</nav> 
+
+
+    
 
             <div class="list-group">
             <p>Filtres</p>
+            <div class="money">
+            </div>
             <div class="list-item"><i class="fas fa-money-bill-wave"></i><span>Economique</span></i></div>
+        
             <div class="list-item"><i class="fas fa-child"></i><span>Familial</span></i></div>
             <div class="list-item"><i class="fas fa-heart"></i><span>Romantique</span></i></div>
             <div class="list-item"><i class="fas fa-dog"></i><span>Animaux autorisés</span></i></div>
             </div>
-        </nav> 
+        
+            
             
             
             <div id="information"><i class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans cette ville
@@ -59,13 +83,13 @@
 
             <section class="containerhebergementetpopulaire">
                 <div class="containerhebergement">
-                <h1>Hebergements à Marseille</h1>
+                <h1>Hébergements à Marseille</h1>
                 <div class="figure--position--hebergement">
                     <a href="#" class="link--hebergement">
                         <figure class="figure--hebergement">
                             <img src="image/Projet 2 - Reservia/images/hebergements/4_small/auberge.jpg" alt="chambre d'hotel">
                             <figcaption class="figcaption--hebergement">
-                                <p class="name--location--hebregement">Auberge la cannebière</p>
+                                <p class="name--location--hebergement">Auberge la Cannebière</p>
                                 <p class="cost--location--hebergement">Nuit à partir de 25€</p>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -79,7 +103,7 @@
                         <figure class="figure--hebergement">
                             <img src="image/Projet 2 - Reservia/images/hebergements/4_small/port.jpg" alt="chambre d'hotel">
                             <figcaption class="figcaption--hebergement">
-                                <p class="name--location--hebregement">Hotel du port</p>
+                                <p class="name--location--hebergement">Hôtel du port</p>
                                 <p class="cost--location--hebergement">Nuit à partir de 52€</p>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -93,7 +117,7 @@
                         <figure class="figure--hebergement">
                             <img src="image/Projet 2 - Reservia/images/hebergements/4_small/mouettes.jpg" alt="chambre d'hôtel">
                             <figcaption class="figcaption--hebergement">
-                                <p class="name--location--hebregement">Hôtel les mouettes</p>
+                                <p class="name--location--hebergement">Hôtel les mouettes</p>
                                 <p class="cost--location--hebergement">Nuit à partir de 76€</p>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -107,7 +131,7 @@
                         <figure class="figure--hebergement">
                             <img src="image/Projet 2 - Reservia/images/hebergements/4_small/mer.jpg" alt="chambre d'hotel">
                             <figcaption class="figcaption--hebergement">
-                                <p class="name--location--hebregement">Hôtel de la mer</p>
+                                <p class="name--location--hebergement">Hôtel de la mer</p>
                                 <p class="cost--location--hebergement">Nuit à partir de 46€</p>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -121,7 +145,7 @@
                         <figure class="figure--hebergement">
                             <img src="image/Projet 2 - Reservia/images/hebergements/4_small/panier.jpg" alt="chambre d'hotel">
                             <figcaption class="figcaption--hebergement">
-                                <p class="name--location--hebregement">Auberge le panier</p>
+                                <p class="name--location--hebergement">Auberge le panier</p>
                                 <p class="cost--location--hebergement">Nuit à partir de 23€</p>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -135,7 +159,7 @@
                         <figure class="figure--hebergement">
                             <img src="image/Projet 2 - Reservia/images/hebergements/4_small/amina.jpg" alt="chambre d'hotel">
                             <figcaption class="figcaption--hebergement">
-                                <p class="name--location--hebregement">Hôtel chez Amina</p>
+                                <p class="name--location--hebergement">Hôtel chez Amina</p>
                                 <p class="cost--location--hebergement">Nuit à partir de 96€</p>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -153,7 +177,7 @@
                 <!--block pour la partie les plus populaires-->
 
                 <div class="containerpopulaire">
-                    <h1>Les plus populaires</h1><i class="fas fa-chart-line"></i></h1>
+                    <h1>Les plus populaires<i class="fas fa-chart-line"></i></h1>
 
                     <div class="figure--position--populaire">
                     <a href="#" class="link--populaire">
@@ -202,6 +226,91 @@
                     </a>
                 </div>
             </div>
+            </section>
+
+
+            <!--Activités a marseille-->
+
+
+            <section>
+
+            <div class="containeractivites">
+                <h1>Activités à Marseille </h1>
+                
+                <div class="figure--position--activites">
+                <a href="#" class="link--activites">
+                    <figure class="figure--activites">
+                        <img src="image/Projet 2 - Reservia/images/activites/4_small/vieux port.jpg" alt="vieux port de marseille">
+                        <figcaption class="figcaption--activites">
+                            <p class="name--location--activites">Vieux port</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            
+                <div class="figure--double">
+                    <a href="#" class="link--activites">
+                        <figure class="figure--activites--double--larger">
+                            <img src="image/Projet 2 - Reservia/images/activites/4_small/fort de pomègues.jpg" alt="fort de pomègues">
+                            <figcaption class="figcaption--activites">
+                                <p class="name--location--activites">Fort de Pomègues</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+
+                    <a href="#" class="link--activites">
+                            <figure class="figure--activites--double--smaller">
+                                <img src="image/Projet 2 - Reservia/images/activites/4_small/iles du frioul.jpg" alt="iles de frioul">
+                                <figcaption class="figcaption--activites">
+                                    <p class="name--location--activites">Ïles de frioul</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        
+                            <a href="#" class="link--activites">
+                                <figure class="figure--activites">
+                                    <img src="image/Projet 2 - Reservia/images/activites/4_small/parc national des calanques.jpg" alt="parc national des calanques">
+                                    <figcaption class="figcaption--activites">
+                                        <p class="name--location--activites">Parc National des Calanques</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <div class="figure--double">
+                                <a href="#" class="link--activites">
+                                    <figure class="figure--activites--double--normal">
+                                        <img src="image/Projet 2 - Reservia/images/activites/4_small/notre dame de la garde.jpg" alt="Notre Dame de la Garde">
+                                        <figcaption class="figcaption--activites">
+                                            <p class="name--location--activites">Notre dame de la garde</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+
+                                
+                                    <a href="#" class="link--activites">
+                                        <figure class="figure--activites--double--normal">
+                                            <img src="image/Projet 2 - Reservia/images/activites/4_small/parc longchamp.jpg" alt="parc longchamps">
+                                            <figcaption class="figcaption--activites">
+                                                <p class="name--location--activites">Parc Longchamp</p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+            
+            
+                            
+</div>
+
+
+
+
+
+
+
+
             </section>
 
                     
