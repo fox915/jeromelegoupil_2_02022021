@@ -7,10 +7,18 @@ body{
     
     }
 
+    header{
+
+        display:flex;
+        justify-content: space-between;
+        
+    }
+
     header,
 nav ul{
 
     margin-top: 20px;
+    
 
 
 }
@@ -19,9 +27,9 @@ nav ul{
 .nav, ul {
     list-style: none;
     display: flex;
-    width:600px;
+    width:400px;
     justify-content: space-between;
-    position: absolute;
+    
     top: 0px;
     right:20px;
     color:blue;
@@ -134,8 +142,14 @@ a{
     border: 1px solid grey;
     border-radius: 20px 20px 20px 20px;
     
+    
 
 
+}
+
+.list-item span{
+
+    margin-left: 20px;
 }
 
 #information i {
@@ -150,15 +164,21 @@ a{
     margin: 20px;
 }   
 
+.container--hebergement--populaire{
 
-.containerhebergement{
+    display:flex;
+}
+
+.container--hebergement{
 
     width: 880px;
     background-color: #f2f2f2;
     border-radius: 15px;
+    margin-right: 20px;
+    
 }
 
-.containerhebergement h1{
+.container--hebergement h1{
 
 
     margin-left: 38px;
@@ -204,6 +224,12 @@ a{
     margin-bottom: 5px;
     margin-left: 10px;
     
+}
+
+.etoiles{
+
+
+
 }
 
 .cost--location--hebergement{
@@ -327,13 +353,12 @@ a{
 
 
     /* Activités à Marseille */
-#containerActivites {
+.container--activites{
+
     margin-top: 30px;
 }
 
-
-#figure--position--activites{
-
+.figure--position--activites{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -341,75 +366,87 @@ a{
     margin-right: -10px;
 }
 
-.link--activites {
+.figure--activites {
+
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #f2f2f2;
+    margin-top: 13px;
+    
+}
+
+.link--activites{
     border-radius: 10px;
     margin: 10px;
 }
-.figure--activites{
-    background-color: white;
-    border-radius: 15px;
-    border: 1px solid #f2f2f2;
-    margin: 0;
+
+.figure--activites img{
+width: 310px;
+height: 410px;
+-o-object-fit: cover;
+object-fit: cover;
+border-radius: 10px 10px 0px 0px;
 
 }
 
-.figure--activites img {
-    width: 310px;
-    height: 410px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.figcaption--activites {
+.figcaption--activites{
     align-items: center;
     margin-left: 30px;
     font-weight: bold;
+
 }
 
-.figure--double {
+.figure--double{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.figure--activites--double--larger {
+.figure--activites--double--larger{
     background-color: white;
     border-radius: 20px;
-    border: 1px solid #f2f2f2;
-    margin: 0;
+    border:1px solid #f2f2f2;
+    
 }
 
-.figure--activites--double--larger img {
+.figure--activites--double--larger img{
     width: 320px;
     height: 180px;
+
+
 }
 
-
-.figure--activites--double--smaller {
+.figure--activites--double--smaller{
     background-color: white;
     border-radius: 20px;
     border: 1px solid #f2f2f2;
-    margin: 0;
+    
 }
 
-.figure--activites--double--smaller img {
+
+.figure--activites--double--smaller img{
+
     width: 320px;
-    height: 120px;
-    border-radius: 20px;
+    height:120px;
+    
+    
 }
-.figure--activites--double--normal {
+
+.figure--activites--double--normal{
     background-color: white;
     border-radius: 20px;
-    border: 1px solid #f2f2f2;
-    margin: 0;
+    border:1px solid #f2f2f2;
+    
+
+
 }
-.figure--activites--double--normal img {
+
+.figure--activites--double--normal img{
     width: 320px;
     height: 151px;
+
+
 }
-
-
 /*footer*/
 
 footer{
