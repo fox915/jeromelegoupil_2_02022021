@@ -1,43 +1,41 @@
 body{
     margin: 0;
     padding: 0;
-    margin-left: 2%;
-    
-    
+    margin-left: 3%;
     
     }
 
     header{
 
-        display:flex;
+        display: flex;
         justify-content: space-between;
+
+    
         
     }
 
     header,
-nav ul{
+nav, ul{
 
     margin-top: 20px;
     margin-right: 20px;
     
-
-
-}
-
-
-.nav, ul {
-    list-style: none;
-    display: flex;
-    width:400px;
-    justify-content: space-between;
-    
-    top: 0px;
-    right:20px;
-    color:blue;
     
 
 
 }
+
+
+.nav, ul{
+   
+ list-style: none;
+ display: flex;
+ width:400px;
+ justify-content: space-between;
+ top: 0px;
+right:20px;
+color:blue;
+ }
 
 
 .name--location--populaire {
@@ -472,11 +470,50 @@ footer{
 
     
     background: #f2f2f2;
-    margin-top: 0px;
     flex-wrap: wrap;
     display: flex;
     margin-left: -3%;
     margin-right: -3%;
 
     
+}
+
+#navbar--footer--first ul{
+        
+    list-style: none;
+    line-height: 30px;
+    display:flex;
+    flex-direction: column;
+    margin-top:30px;
+    margin-bottom: 30px;
+    color:black;
+    width: 300px;
+}
+
+#navbar--footer--second ul{
+    line-height: 30px;
+    display:flex;
+    flex-direction: column;
+    margin-top:30px;
+    margin-bottom: 30px;
+    color:black;
+    width: 300px;
+    
+}
+
+#navbar--footer--third ul{
+    line-height: 30px;
+    display:flex;
+    flex-direction: column;
+    margin-top:30px;
+    margin-bottom: 30px;
+    color:black;
+    
+    
+}
+
+
+.footer--title{
+
+    font-weight: bold;
 }
