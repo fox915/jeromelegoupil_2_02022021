@@ -1,14 +1,24 @@
+
+
+
+
+    
+
+
+
 body{
     margin: 0;
     padding: 0;
     margin-left: 3%;
+    font-family: raleway;
     
-    }
+}
 
     header{
 
         display: flex;
         justify-content: space-between;
+        top:0px;
 
     
         
@@ -25,6 +35,12 @@ nav, ul{
 
 }
 
+a:hover{
+
+    color:#0065fc;
+
+}
+    
 
 .nav, ul{
    
@@ -34,7 +50,7 @@ nav, ul{
  justify-content: space-between;
  top: 0px;
 right:20px;
-color:blue;
+color:#0065fc;
  }
 
 
@@ -62,7 +78,7 @@ a{
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight:normal;
 }
 
 
@@ -247,7 +263,7 @@ a{
  }
 
 
-/*les plus populaires*/
+
 .containerpopulaire{
 
     width: 400px;
@@ -517,3 +533,20 @@ footer{
 
     font-weight: bold;
 }
+
+
+
+@media screen (min-width:140px)
+{
+
+
+    .nav ul{
+        font: 1em sans-serif;
+        
+    
+
+    
+    }
+    
+   
+
