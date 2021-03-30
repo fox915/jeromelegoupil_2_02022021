@@ -18,10 +18,15 @@ body{
 
         display: flex;
         justify-content: space-between;
-        top:0px;
+        margin-top: 18px;
+    
 
     
         
+    }
+    .header img{
+
+        margin-top:20px;
     }
 
     header,
@@ -35,23 +40,50 @@ nav, ul{
 
 }
 
-a:hover{
 
-    color:#0065fc;
-
-}
     
 
 .nav, ul{
    
  list-style: none;
  display: flex;
- width:400px;
+ width: 140%;
  justify-content: space-between;
  top: 0px;
-right:20px;
-color:#0065fc;
+ margin-left: -50%;
+ color:#0065fc;
+ cursor:pointer;
+ 
+ 
+    
+    
+
+
  }
+
+.activity{
+
+    color: black;
+}
+    
+   
+  .signup{
+
+    border:transparent;
+  }
+
+  header li{
+
+    padding-top: 30px;
+  }
+ 
+header li:hover{
+    border-top: 1px solid #0065fc;
+   
+  
+    
+}
+
 
 
 .name--location--populaire {
@@ -63,6 +95,7 @@ color:#0065fc;
 .cost--location--populaire{
 
     margin-top: -10px;
+    font-weight: 500;
 }
 
 
@@ -134,9 +167,10 @@ a{
 
     display: flex;
     justify-content:space-between;
-    width: 900px;
+    flex-wrap: wrap;
+    width: 75%;
     margin-top: 30px;
-    height: 40px;
+    /*height: 40px;*/
 
 }
 
@@ -144,8 +178,10 @@ a{
 
     padding: 10px;
     background-color: #deebff;
-    border-radius: 50%;
+    border: 1px;
+    border-radius: 50px;
     color:#0065fc;
+    margin-left: -4px;
 
 }
 
@@ -154,10 +190,21 @@ a{
     width: 200px;
     text-decoration: none;
     font-style: normal;
-    border: 1px solid grey;
+    border: 2px solid #d9d9d9;
     border-radius: 20px 20px 20px 20px;
     
     
+}
+
+.list-item:hover{
+
+    transform: scale(1.035);
+    border-color: #0065fc;
+    cursor: pointer;
+}
+
+.filters{
+    line-height: 5px;
 
 
 }
@@ -177,6 +224,7 @@ a{
     margin-right: 15px;
     font-size: 12px;
     margin: 20px;
+    margin-left: 1px;
 }   
 
 .container--hebergement--populaire{
@@ -189,7 +237,7 @@ a{
     width: 880px;
     background-color: #f2f2f2;
     border-radius: 15px;
-    margin-right: 20px;
+    margin-right: 80px;
     
 }
 
@@ -211,6 +259,12 @@ a{
 
 
 }
+
+.figure--hebergement:hover{
+
+    transform: scale(1.015);
+}
+
 
 .link--hebergement{
 
@@ -250,6 +304,7 @@ a{
 .cost--location--hebergement{
 
     margin-top: 23px;
+    font-weight: normal;
  }
 
 
@@ -266,7 +321,7 @@ a{
 
 .containerpopulaire{
 
-    width: 400px;
+    width: 30%;
     background-color: #f2f2f2;
     border-radius: 12px;
 
@@ -397,7 +452,7 @@ a{
 }
 
 .figure--activites img{
-width: 280px;
+width: 100%;
 height: 410px;
 -o-object-fit: cover;
 object-fit: cover;
@@ -427,7 +482,7 @@ box-shadow: 5px 0px 5px 0px;
 }
 
 .figure--activites--double--larger img{
-    width: 280px;
+    width: 100%;
     height: 150px;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 10px 10px 0px 0px;
@@ -490,6 +545,7 @@ footer{
     display: flex;
     margin-left: -3%;
     margin-right: -3%;
+   
 
     
 }
@@ -504,6 +560,9 @@ footer{
     margin-bottom: 30px;
     color:black;
     width: 300px;
+    margin-left:20px;
+    border-top: transparent;
+    padding: 0;
 }
 
 #navbar--footer--second ul{
@@ -514,7 +573,9 @@ footer{
     margin-bottom: 30px;
     color:black;
     width: 300px;
-    
+    margin-left: 30px;
+    border-top: transparent;
+    padding: 0;
 }
 
 #navbar--footer--third ul{
@@ -524,6 +585,10 @@ footer{
     margin-top:30px;
     margin-bottom: 30px;
     color:black;
+    width:300px;
+    margin-left: 30px;
+    border-top: transparent;
+    padding: 0;
     
     
 }
@@ -536,17 +601,78 @@ footer{
 
 
 
-@media screen (min-width:140px)
-{
+@media screen and (max-width:768px){
 
 
-    .nav ul{
-        font: 1em sans-serif;
+    .container--hebergement--populaire{
+
+        flex-direction:column-reverse;
+
+    }
+
+
+    .nav, ul{
+
+        
+
+        width: 70%;
+    
+        flex-wrap: wrap;
+        text-align:justify;
+        margin-left: -10%;
+    }
+.list-group{
+
+    flex-wrap:wrap;
+    justify-content:start;
+    
+    width: 100%;
+}
+
+.filters{
+
+    width:100%;
+}
+#information i{
+
+    
+}
+
+
+
+
+.figure--position--populaire{
+
+   
+}
+.figure--position--hebergement{
+width:100%;
+flex-direction: column;
+
+
+
+  
+}
+
+.figure--hebergement{
+
+    width: 100%;
+}
+
+.link--hebergement{
+
+    width:100%;
+}
+}
+
+
+
         
     
 
     
-    }
     
+    
+
    
 
