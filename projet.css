@@ -234,10 +234,10 @@ a{
 
 .container--hebergement{
 
-    width: 880px;
+    width: 70%;
     background-color: #f2f2f2;
     border-radius: 15px;
-    margin-right: 80px;
+    margin-right: 50px;
     
 }
 
@@ -267,14 +267,14 @@ a{
 
 
 .link--hebergement{
-
+    width: 30%;
     border-radius: 20px;
     margin: 10px;
 }
 
 .figure--hebergement img{
 
-    width: 250px;
+    width: 100%;
     height: 120px;
     border-radius: 20px 20px 0 0;
     -o-object-fit: cover;
@@ -618,7 +618,7 @@ footer{
     }
 .container--hebergement{
 
-    width: 390px;
+    width: 100%;
 }
 
 
@@ -675,11 +675,22 @@ flex-direction: column;
 
     width:100%;
 }
+#figure--position--activites{
+    display:flex;
+    flex-direction: column;
+}
 .figure--activites{
 
 margin-left: 60px;
 
 }
+
+.link--activites, .figure--double{
+
+    width: 100%;
+    height: 200px;
+}
+/*
 .figure--activites--double--larger{
 
     margin-right:20px;
@@ -695,7 +706,7 @@ margin-left: 60px;
 
     margin-left:20px;
     
-}
+}*/
 #navbar--footer--first ul{
 
     
