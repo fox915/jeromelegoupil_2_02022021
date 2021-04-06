@@ -11,7 +11,7 @@ body{
     padding: 0;
     margin-left: 3%;
     font-family: raleway;
-    
+   body:100%
 }
 
     header{
@@ -167,7 +167,7 @@ a{
 
     display: flex;
     justify-content:space-between;
-    flex-wrap: wrap;
+    
     width: 75%;
     margin-top: 30px;
     /*height: 40px;*/
@@ -321,7 +321,7 @@ a{
 
 .containerpopulaire{
 
-    width: 30%;
+    width: 390px;
     background-color: #f2f2f2;
     border-radius: 12px;
 
@@ -447,12 +447,13 @@ a{
 }
 
 .link--activites{
+    width:25%;
     border-radius: 10px;
     margin: 0;
 }
 
 .figure--activites img{
-width: 100%;
+width:100%;
 height: 410px;
 -o-object-fit: cover;
 object-fit: cover;
@@ -469,9 +470,15 @@ box-shadow: 5px 0px 5px 0px;
 }
 
 .figure--double{
+    width:25%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.figure--double a{
+
+    width:100%;
 }
 
 .figure--activites--double--larger{
@@ -482,8 +489,8 @@ box-shadow: 5px 0px 5px 0px;
 }
 
 .figure--activites--double--larger img{
-    width: 100%;
-    height: 150px;
+    width:100%;
+    height: 205px;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 10px 10px 0px 0px;
     box-shadow: 5px 0px 5px 0px;
@@ -503,8 +510,8 @@ box-shadow: 5px 0px 5px 0px;
 
 .figure--activites--double--smaller img{
 
-    width: 280px;
-    height:120px;
+    width:100%;
+    height:205px;
     box-shadow: 5px 0px 5px 0px;
     border-radius: 20px 20px 0px 0px;
     
@@ -520,8 +527,8 @@ box-shadow: 5px 0px 5px 0px;
 }
 
 .figure--activites--double--normal img{
-    width: 280px;
-    height: 151px;
+    width:100%;
+    height: 205px;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 5px 0px 5px 0px;
 
@@ -609,6 +616,10 @@ footer{
         flex-direction:column-reverse;
 
     }
+.container--hebergement{
+
+    width: 390px;
+}
 
 
     .nav, ul{
@@ -622,12 +633,13 @@ footer{
         margin-left: -10%;
     }
 .list-group{
-
-    flex-wrap:wrap;
-    justify-content:start;
+display:flex;
+flex-wrap:wrap;
+    justify-content: space-around;
     
-    width: 100%;
+    width: 75%;
 }
+
 
 .filters{
 
@@ -641,10 +653,7 @@ footer{
 
 
 
-.figure--position--populaire{
 
-   
-}
 .figure--position--hebergement{
 width:100%;
 flex-direction: column;
@@ -656,14 +665,53 @@ flex-direction: column;
 
 .figure--hebergement{
 
-    width: 100%;
+    width: 250px;
+    margin-left: 40px;
+    
+
 }
 
 .link--hebergement{
 
     width:100%;
 }
+.figure--activites{
+
+margin-left: 60px;
+
 }
+.figure--activites--double--larger{
+
+    margin-right:20px;
+    
+    
+}
+.figure--activites--double--smaller{
+
+    margin-right:20px;
+    
+}
+.figure--activites--double--normal{
+
+    margin-left:20px;
+    
+}
+#navbar--footer--first ul{
+
+    
+    text-align: center; 
+}
+#navbar--footer--second ul{
+    text-align: center;
+}
+#navbar--footer--third ul{
+    text-align: center;
+}
+}
+
+
+
+
 
 
 
